@@ -1,0 +1,17 @@
+.tasks {
+  max-width: 800px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: solid 1px #ddd;
+}
+
+.task:last-child {
+  border-bottom: none;
+}

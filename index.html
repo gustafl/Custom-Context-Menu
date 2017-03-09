@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Custom Context Menus!</title>
-  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="primary-header">
-    <div class="container">
-      <h1 class="primary-header__title">
-        My Tasks App <small>using custom context menus</small>
-      </h1>
-    </div>
-  </header>
-  <main class="content">
-    <div class="container">
+  <head>
+    <meta charset="utf-8" />
+    <title>Context menu</title>
+    <meta name="description" content="Context menu sample code" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/contextMenu.css">
+  </head>
+  <body>
+    <div id="container">
       <ul class="tasks">
-        <li class="task" data-id="3">
-          <div class="task__content">
-            Go To Grocery
+        <li class="task" data-id="1">
+          <div class="task-content">
+            Write code
           </div>
-          <div class="task__actions">
+          <div class="task-actions">
             <i class="fa fa-eye"></i>
             <i class="fa fa-edit"></i>
             <i class="fa fa-times"></i>
           </div>
         </li>
         <li class="task" data-id="2">
-          <div class="task__content">
-            Type Some Code
+          <div class="task-content">
+            Refactor code
           </div>
-          <div class="task__actions">
+          <div class="task-actions">
             <i class="fa fa-eye"></i>
             <i class="fa fa-edit"></i>
             <i class="fa fa-times"></i>
           </div>
         </li>
-        <li class="task" data-id="1">
-          <div class="task__content">
-            Build An App
+        <li class="task" data-id="3">
+          <div class="task-content">
+            Check in code
           </div>
-          <div class="task__actions">
+          <div class="task-actions">
             <i class="fa fa-eye"></i>
             <i class="fa fa-edit"></i>
             <i class="fa fa-times"></i>
           </div>
         </li>
       </ul>
-      <div class="content__footer">
-        <button>Add A New Task</button>
-      </div>
+      <nav class="context-menu">
+        <ul class="context-menu-items">
+          <li class="context-menu-item">
+            <a href="#" class="context-menu-link" data-action="View">
+              <i class="fa fa-eye"></i> View Task
+            </a>
+          </li>
+          <li class="context-menu-item">
+            <a href="#" class="context-menu-link" data-action="Edit">
+              <i class="fa fa-edit"></i> Edit Task
+            </a>
+          </li>
+          <li class="context-menu-item">
+            <a href="#" class="context-menu-link" data-action="Delete">
+              <i class="fa fa-times"></i> Delete Task
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </main>
-  <footer class="primary-footer">
-    <div class="container">
-      <small>&copy; 2015, Context Menu Madness!</small>
-    </div>
-  </footer>
-  <nav id="context-menu" class="context-menu">
-    <ul class="context-menu__items">
-      <li class="context-menu__item">
-        <a href="#" class="context-menu__link" data-action="View"><i class="fa fa-eye"></i> View Task</a>
-      </li>
-      <li class="context-menu__item">
-        <a href="#" class="context-menu__link" data-action="Edit"><i class="fa fa-edit"></i> Edit Task</a>
-      </li>
-      <li class="context-menu__item">
-        <a href="#" class="context-menu__link" data-action="Delete"><i class="fa fa-times"></i> Delete Task</a>
-      </li>
-    </ul>
-  </nav>
-  <script src="main.js"></script>
-</body>
+  </body>
 </html>
