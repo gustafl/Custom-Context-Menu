@@ -5,9 +5,8 @@ This repo contains a context menu built in pure JavaScript and CSS, described in
 Even though this is a fork of Nick's repo, it's not a fork in the usual sense. I did not use the files in the original repo. All the files in this repo came about as I followed along in Nick's article. Some of my changes are described below:
 
   - Files are separated in folders for CSS, JavaScript and fonts.
-  - Require.js (minimized) is included.
+  - Dependencies (Require.js + Font Awsome) included using Bower.
   - JavaScript files conforms to the AMD module format.
-  - FontAwsome is included.
 
 Nick has a demo of his context menu [here](http://codepen.io/callmenick/pen/xbaWdB).
 
