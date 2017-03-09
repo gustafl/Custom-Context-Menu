@@ -1,0 +1,28 @@
+{
+  "name": "Custom-Context-Menu",
+  "homepage": "https://github.com/gustafl/Custom-Context-Menu",
+  "authors": [
+    "Nick Salloum <nick.salloum@axiomzen.co>",
+    "Gustaf Liljegren <gustafl@bahnhof.se>"
+  ],
+  "description": "Code and test application for creating a custom context menu.",
+  "main": [
+    "./css/contextMenu.css",
+    "./css/tasks.css",
+    "./css/style.css",
+    "./js/contextMenu.js",
+    "./js/main.js"
+  ],
+  "keywords": [
+    "context",
+    "menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "requirejs": "requirejs-bower#^2.3.3",
+    "font-awesome": "^4.7.0"
+  }
+}
