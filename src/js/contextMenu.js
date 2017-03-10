@@ -128,7 +128,11 @@ define([], function () {
     function menuItemListener(link) {
         var dataId = clickedTask.getAttribute('data-id');
         var dataAction = link.getAttribute('data-action');
-        console.log('Task ID = ' + dataId + ', Task action = ' + dataAction);
+        var listItem = document.createElement('li');
+        var listItemText = document.createTextNode('Task ID = ' + dataId + ', Task action = ' + dataAction);
+        listItem.appendChild(listItemText);
+        var list = document.querySelector('.user-actions');
+        list.appendChild(listItem);
         toggleMenuOff();
     }
 
