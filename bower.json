@@ -7,11 +7,12 @@
   ],
   "description": "Code and test application for creating a custom context menu.",
   "main": [
-    "./css/contextMenu.css",
-    "./css/tasks.css",
-    "./css/style.css",
-    "./js/contextMenu.js",
-    "./js/main.js"
+    "./src/index.html",
+    "./src/css/contextMenu.css",
+    "./src/css/tasks.css",
+    "./src/css/style.css",
+    "./src/js/contextMenu.js",
+    "./src/js/main.js"
   ],
   "keywords": [
     "context",
